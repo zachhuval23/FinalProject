@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Olympic Menu Diner - Menu</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="restaurant-name">Olympic Mountain Diner</h1>
+    </header>
+  
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="#">Location</a>
+      <a href="#">Contact</a>
+    </nav>
+    <!-- Rest of the homepage content goes here -->
+    <div class="menu">
+      <h2> Mountain Menu of the Day</h2>
+  
+      <div class="menu-item">
+        <h3>Hot Dog</h3>
+        <p>Our hotdogs are crafted with the finest quality ingredients, starting with juicy, all-beef franks that burst with flavor in every bite. Nestled within a soft, perfectly toasted bun, our hotdogs are a symphony of textures and tastes. Each bite offers a delightful combination of savory and smoky flavors, creating a truly satisfying experience.</p>
+        <label for="quantity-item-1">Quantity:</label>
+        <input type="number" id="quantity-item-1" min="0" value="0">
+      </div>
+  
+      <div class="menu-item">
+        <h3>Hamburger</h3>
+        <p>At our establishment, we start with only the finest quality ingredients. Our burgers feature premium, hand-selected beef patties, seasoned to perfection and cooked to juicy, flavorful perfection. Each bite is a symphony of tenderness, with the meat boasting a satisfying char and an irresistible smoky aroma.</p>
+        <label for="quantity-item-2">Quantity:</label>
+        <input type="number" id="quantity-item-2" min="0" value="0">
+      </div>
+
+      <div class="menu-item">
+        <h3>French Fries</h3>
+        <p>Our French fries are made from the finest quality potatoes, hand-cut to the ideal thickness. They are then expertly cooked to achieve the perfect balance of a golden, crispy exterior and a fluffy, tender interior. With each bite, you'll experience a satisfying crunch followed by a burst of fluffy potato goodness that will leave you yearning for another fry.</p>
+        <label for="quantity-item-3">Quantity:</label>
+        <input type="number" id="quantity-item-3" min="0" value="0">
+      </div>
+
+      <button onclick="calculateTotal()">Calculate Total</button>
+  
+      <div id="invoice">
+        <h2>Invoice</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Quantity</th>
+              <th>Price</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody id="invoice-items">
+            <!-- Invoice items will be added dynamically here -->
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">Total:</td>
+              <td id="total">0</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+    <script src="menu.js"></script>
+    
+
+  </body>
+</html>
